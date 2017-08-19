@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>HanFu_style</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        <link rel="stylesheet" href="main.css">
+
+</head>
+    
+    <style>
+        body{background-image: url("http://pic.qiantucdn.com/58pic/13/79/83/52P58PIC3dH_1024.jpg!/fw/780/watermark/url/L3dhdGVybWFyay12MS4zLnBuZw==/align/center");
+    }
+
+   .container {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial;
+}
+
+.container a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+}
+
+.container a:hover, .dropdown:hover .dropbtn {
+    background-color: #A9A9A9;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+</style>
+    
+<body>
+    <div class="container">
+  <a href="home.html">Home</a>
+  <a href="contact.html">Contact</a>
+  <div class="dropdown">
+    <button class="dropbtn" onclick="myFunction()">Products</button>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="traditonal.html">traditional Hanfu</a>
+    </div>
+  </div> 
+</div>
+	
+    
+<h1 style="color:#191970;" >Modernized Hanfu 汉服 </h1>
+    <img src="http://static.aihanfu.net/uploadfile/2017/0520/20170520102107954.jpg" alt = "http://www.aihanfu.com/wen/3675/" align = "right" width = "50%" height ="30%">
+<h3>Hanfu,Chinses words for traditional Chinese Han dresses.</h3>
+
+<p> Han people from the enthronement of the Yellow Emperor (about 	2698 BC) till the late Ming Dynasty (1368 - 1644 AD). It became known as the Han Fu (“fu” means “clothes” in Chinese) because the fashion was improved and popularized during the Han Dynasty. It is usually in the form of long gown, cross collar, wrapping the right lapel over the left, loose wide sleeves and no buttons but a sash. Although simple in design, it gives different feelings to different wearers.  </p>
+    
+<h3>Characteristics </h3> 
+    
+<p> The hallmark of Hanfu is in its cross collar, right lapel, and tying with sash in place of buttons. And flat pattern cutting makes the clothes wide and loose and the wearer both look and feel comfortable.
+The fabrics for making the clothes were meticulously chosen. Some nine categories of fabrics were used such as brocade, damask silk, cotton, yarn and so on and dyed by environmental friendly dyestuff from plants extracts.Patterns adopted from ritualistic Chinese symbols, were also important for the Hanfu. They reflect upon different social standings of the bearers. Usually, objects depicting the sun, moon, elephants, tigers, dragons, to birds were embroidered.</p>
+   
+<h3> links </h3>
+    <ul> 
+    <li><a href="https://www.travelchinaguide.com/intro/clothing/hanfu/">https://www.travelchinaguide.com/intro/clothing/hanfu</a></li>
+    
+<li><a
+       href = "https://www.travelchinaguide.com/intro/clothing/" >https://www.travelchinaguide.com/intro/clothing/</a></li>
+
+</ul>
+    
+
+</body>
+    	<footer>
+        <script   src="https://code.jquery.com/jquery-3.2.1.min.js"   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="   crossorigin="anonymous"></script>
+        
+		<script src="dropdown_menu.js"> </script>
+            <script>
+                var input = "algorithmia";
+Algorithmia.client("YOUR_API_KEY")
+           .algo("algo://diego/RetrieveTweetsWithKeyword/0.1.2")
+           .pipe(input)
+           .then(function(output) {
+             console.log(output);
+           });
+            </script>
+	</footer>
+   
+
+    
+</html>

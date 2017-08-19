@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>HanFu_style</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        <link rel="stylesheet" href="main.css">
+
+</head>
+    
+    <style>
+        body{background-image: url("http://pic.qiantucdn.com/58pic/13/79/83/52P58PIC3dH_1024.jpg!/fw/780/watermark/url/L3dhdGVybWFyay12MS4zLnBuZw==/align/center");
+    }
+
+   .container {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial;
+}
+
+.container a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+}
+
+.container a:hover, .dropdown:hover .dropbtn {
+    background-color: #A9A9A9;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+</style>
+    
+<body>
+    <div class="container">
+  <a href="home.html">Home</a>
+  <a href="contact.html">Contact</a>
+  <div class="dropdown">
+    <button class="dropbtn" onclick="myFunction()">Products</button>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="#">traditional Hanfu</a>
+    </div>
+  </div> 
+</div>
+
+    
+<h1 style="color:#191970;" >Traditional Hanfu </h1>
+       
+    
+<div class="product-description" data-name="hair tie" data-price=" 3.00 $">
+    <img src="http://pic.hanfugou.com/pc/2016/12/16/12/2ca65def8d6e4e55ac377939b924f5c3.JPG_lo450.jpg" alt = "http://www.aihanfu.com/wen/3675/"  width = "50%" height ="30%" align ="left">
+     <h3 class="product-name" >  cape</h3>
+     <p class="product-price" >&dollar;    50.00</p>
+    <form class="add-to-cart" action="cart.html" method="post">
+			<div>
+				<label for="qty-1">Quantity</label>
+				<input type="text" name="qty-1" id="qty-1" class="qty" value="1" />
+			</div>
+		
+		</form>
+</div>    
+
+   
+    
+</body>
+    
+    
+    <footer>
+        <script   src="https://code.jquery.com/jquery-3.2.1.min.js"   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="   crossorigin="anonymous"></script>
+        
+		<script src="js.js"> </script>
+            <script>
+                var input = "algorithmia";
+Algorithmia.client("YOUR_API_KEY")
+           .algo("algo://diego/RetrieveTweetsWithKeyword/0.1.2")
+           .pipe(input)
+           .then(function(output) {
+             console.log(output);
+           });
+            </script>
+	</footer>
+   
+
+    
+</html>
+
+
+<!--
+<h3 class="product-name" >   hair tie</h3>
+    <img src="http://pic.hanfugou.com/web/2017/6/14/15/3e31b1cf52474d698ed4715dc93b1136.jpg_lo450.jpg" alt = "http://www.aihanfu.com/wen/3675/"  width = "50%" height ="30%" align ="left">
+   
+    
+		<p class="product-price" >&dollar;    3.00</p>
+    
+		<form class="add-to-cart"  action="cart.html" method="post">
+			<div>
+				<label for="qty-1">Quantity</label>
+				<input type="text" name="qty-1" id="qty-1" class="qty" value="1" />
+			</div>
+		
+		</form>-->
